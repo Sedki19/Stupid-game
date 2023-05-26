@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello :D</title>
+    <script>
+        function no() {
+            let x = document.getElementById("no");
+
+            x.style.right = (Math.floor(Math.random() * 200)) + "px";
+            x.style.top = (Math.floor(Math.random() * 200)) + "px";
+        }
+        function yes() {
+            document.body.innerHTML = "<center><h1>I know it HAHAHAHAHA</h1></center> <br> <center><input type = 'button' value='Go back' onclick= 'back()' style ='background : gray; width : 100px ; height : 70PX'></center>";
+        }
+        function back() {
+            document.body.innerHTML = '<center><h1>Are you stupid ? :D</h1></center><br><br><center style="margin-right: 97px;"><input type="button" value="Yes" id="yes" onclick="yes()"style="width: 100px; height: 65px; font-size: x-large;background: green; color: white; font-family:"Lucida Sans" Geneva, Verdana, sans-serif;"><input type="button" value="No" id="no" onclick="no()"style="position:absolute;;width: 100px; height: 65px; font-size: x-large;background: red; color: white; font-family:"Lucida Sans", Geneva, Verdana, sans-serif;"></center>';
+        }
+    </script>
+</head>
+
+<body>
+
+    <center>
+        <h1>Are you stupid ? :D</h1>
+    </center>
+
+    <br><br>
+
+    <center style="margin-right: 97px;"><input type="button" value="Yes" id="yes" onclick="yes()"
+            style="width: 100px; height: 65px; font-size: x-large;background: green; color: white; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <input type="button" value="No" id="no" onclick="no()"
+            style="position:absolute;;width: 100px; height: 65px; font-size: x-large;background: red; color: white; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    </center>
+</body>
+
+</html>
